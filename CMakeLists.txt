@@ -83,6 +83,7 @@ target_link_libraries(zdepth_test PRIVATE zdepth)
 # install(FILES LICENSE DESTINATION ${CMAKE_INSTALL_PREFIX})
 # install(FILES README.md DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES include/zdepth.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include/zdepth)
+install(FILES tests/test_vectors.inl DESTINATION ${CMAKE_INSTALL_PREFIX}/include/zdepth/tests)
 install(TARGETS zdepth EXPORT zdepth
         ARCHIVE DESTINATION lib
         LIBRARY DESTINATION lib)
