@@ -80,9 +80,9 @@ target_link_libraries(zdepth_test PRIVATE zdepth)
 ################################################################################
 # Install
 
-install(FILES LICENSE DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(FILES README.md DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(DIRECTORY cmake include DESTINATION ${CMAKE_INSTALL_PREFIX})
+# install(FILES LICENSE DESTINATION ${CMAKE_INSTALL_PREFIX})
+# install(FILES README.md DESTINATION ${CMAKE_INSTALL_PREFIX})
+install(FILES include/zdepth.hpp DESTINATION ${CMAKE_INSTALL_PREFIX}/include/zdepth)
 install(TARGETS zdepth EXPORT zdepth
         ARCHIVE DESTINATION lib
         LIBRARY DESTINATION lib)
