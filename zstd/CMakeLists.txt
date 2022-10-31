@@ -25,4 +25,6 @@ target_include_directories(zstd PUBLIC
     "$<INSTALL_INTERFACE:include>"
 )
 
-install(TARGETS zstd EXPORT zdepth LIBRARY DESTINATION lib)
+install(TARGETS zstd EXPORT zdepth
+        ARCHIVE DESTINATION lib
+        LIBRARY DESTINATION lib)

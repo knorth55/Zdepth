@@ -83,7 +83,9 @@ target_link_libraries(zdepth_test PRIVATE zdepth)
 install(FILES LICENSE DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(FILES README.md DESTINATION ${CMAKE_INSTALL_PREFIX})
 install(DIRECTORY cmake include DESTINATION ${CMAKE_INSTALL_PREFIX})
-install(TARGETS zdepth EXPORT zdepth LIBRARY DESTINATION lib)
+install(TARGETS zdepth EXPORT zdepth
+        ARCHIVE DESTINATION lib
+        LIBRARY DESTINATION lib)
 
 ################################################################################
 # Generate zdepthConfig.cmake and zdepthConfigVersion.cmake for cmake projects
