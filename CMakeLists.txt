@@ -61,7 +61,7 @@ include_directories(include)
 
 # zdepth library
 
-add_library(zdepth STATIC ${SOURCE_FILES})
+add_library(zdepth SHARED ${SOURCE_FILES})
 add_library(zdepth::zdepth ALIAS zdepth)
 
 target_link_libraries(zdepth PUBLIC zstd)
